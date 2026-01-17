@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Informations</title>
+    <link rel="stylesheet" href="./inscription.css">
+</head>
+<body>
+  <header>
+    <div id="bloc_page">
+
+      <div class="header-top">
+         <div class="logo-section">
+          <div class="title">
+           <img src="./Support/images/logo-ensah.png" alt="ENSAH Logo">
+           <div class = logo>
+            <h1>ENSAH</h1>
+           </div>
+           <p>Ecole Nationale des Sciences <br> Appliquées d'Al Hoceima</p>
+          </div>
+        </div>
+      </div>
+
+        <div id="nav-icon3">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="mobile-menu">
+          <ul>
+            <li><a href="./tp3.html">ACCUEIL</a></li>
+            <li><a href="./presentation.html">PRÉSENTATION</a></li>
+            <li><a href="./formation.html">FORMATION</a></li>
+            <li><a href="./inscription.html">INSCRIPTION</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      
+        
+        <div class="novo">
+            <nav>
+           <ul>
+            <li><a href="./tp3.html">ACCUEIL</a></li>
+            <li><a href="./presentation.html">PRÉSENTATION</a></li>
+            <li><a href="./formation.html">FORMATION</a></li>
+            <li><a href="./inscription.html">INSCRIPTION</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+           </ul>
+          </nav>
+        </div>
+  
+
+        
+        
+    
+    <div class="header-line">
+      <img src="./Support/images/separateur.png" alt="header line" width="100%" height="5px">
+    </div>
+   </div>
+  </header>
+
+<body>
+    <div class="container">
+        <div class="header-box">
+            <p class="intro-text">Bonjour c'est ma première mission en programmation web</p>
+            <h1>Veuillez remplir le formulaire ci-dessous avec vos informations</h1>
+        </div>
+
+        <form id="userForm" action="process.php" method="POST" enctype="multipart/form-data">
+            
+            <!-- Section Photo -->
+            <fieldset class="form-section">
+                <legend>Photo</legend>
+                <div class="form-group">
+                    <label for="photo">Votre Image:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                    <div id="imagePreview" class="image-preview"></div>
+                </div>
+            </fieldset>
+
+            <!-- Section Informations générales -->
+            <fieldset class="form-section">
+                <legend>Vos informations générales</legend>
+                
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Sexe:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="homme" name="sexe" value="Homme" checked>
+                        <label for="homme">Homme</label>
+                        
+                        <input type="radio" id="femme" name="sexe" value="Femme">
+                        <label for="femme">Femme</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" value="18" min="1" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="naissance">Date de naissance:</label>
+                    <input type="date" id="naissance" name="naissance" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="couleur">Couleur préférée:</label>
+                    <input type="color" id="couleur" name="couleur" value="#000000">
+                </div>
+
+                <div class="form-group">
+                    <label for="pays">Pays:</label>
+                    <select id="pays" name="pays" required>
+                        <option value="">Sélectionner un pays</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="France">France</option>
+                        <option value="Belgique">Belgique</option>
+                        <option value="Suisse">Suisse</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Algérie">Algérie</option>
+                        <option value="Tunisie">Tunisie</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Section Indicateurs -->
+            <fieldset class="form-section">
+                <legend>Vos indicateurs</legend>
+                
+                <div class="form-group">
+                    <label for="height">Height:</label>
+                    <div class="range-container">
+                        <span>Short</span>
+                        <input type="range" id="height" name="height" min="140" max="220" value="170">
+                        <span>Tall</span>
+                        <span id="heightValue">170 cm</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="salary">Salary:</label>
+                    <div class="range-container">
+                        <span>Poor</span>
+                        <input type="range" id="salary" name="salary" min="1000" max="50000" value="10000" step="500">
+                        <span>Rich</span>
+                        <span id="salaryValue">10000 €</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Section Coordonnées -->
+            <fieldset class="form-section">
+                <legend>Vos coordonnées</legend>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Vos coordonnées:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="coord_email" name="coordonnees[]" value="Email">
+                        <label for="coord_email">Email</label>
+                        
+                        <input type="checkbox" id="coord_whatsapp" name="coordonnees[]" value="Whatsapp">
+                        <label for="coord_whatsapp">Whatsapp</label>
+                        
+                        <input type="checkbox" id="coord_chat" name="coordonnees[]" value="In-app chat">
+                        <label for="coord_chat">In-app chat</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Envoyer</button>
+                <button type="reset" class="btn-reset">Réinitialiser</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+  <footer>
+    <div class="footer-content">
+      <div class="footer-separator">
+         <div class="footer-line">
+          <img src="./Support/images/separateur.png" alt="footer background" class="footer-bg" width="100%" height="5px">
+          <img src="./Support/images/ombre.png" alt="footer background" class="footer-bg" width="100%" height="10px">
+          <img src="./Support/images/ico_top.png" alt="footer dot" class="footer-dot" width="40px" height="10px">
+         </div>
+      </div>
+      <div class="footer-main">
+        <div class = "footer-info">
+        <h3>CONTACTEZ-NOUS</h3>
+        <p>Ecole Nationale des Sciences Appliquées Al Hoceima
+        <br>BP 03, Ajdir Al-Hoceima</p>
+        <p>Tel: ‪+212(0) 539 80 57 12‬</p>
+        </div>
+       <div class = "footer-pics">
+        <h3>GALERIES</h3>
+        <ul class="footer-galleries">
+          <li><a href="#img1"><img src="./Support/images/photo1.jpg"></a></li>
+          <li><a href="#img2"><img src="./Support/images/photo2.jpg"></a></li>
+          <li><a href="#img3"><img src="./Support/images/photo3.jpg"></a></li>
+          <div id="img1" class="lightbox">
+          <a href="#">
+          <img src="./Support/images/photo1L.jpg" alt="large version">
+          </a>
+          </div>
+          <div id="img2" class="lightbox">
+          <a href="#">
+          <img src="./Support/images/photo2L.jpg" alt="large version">
+          </a>
+          </div>
+          <div id="img3" class="lightbox">
+          <a href="#">
+          <img src="./Support/images/photo3L.jpg" alt="large version">
+          </a>
+          </div>
+        </ul>
+       </div>
+       <div class = "liens">
+        <h3>LIENS UTILES</h3>
+        <div class="footer-line-links">
+          <div class="ico-imgs">
+          <img src="./Support/images/ico_liensexterne.png" alt="links separator" width="50px" height="5px">
+          <img src="./Support/images/ico_liensexterne.png" alt="links separator" width="50px" height="5px">
+          <img src="./Support/images/ico_liensexterne.png" alt="links separator" width="50px" height="5px">
+          </div>
+          <div class="ico-links">
+            <ul>
+             <li>Enseignement superieur</li>
+             <li>Site de l'Universite</li>
+             <li>FST AL Hoceima</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  $(function () {
+    $('#nav-icon3').on('click', function () {
+      $(this).toggleClass('open');
+      $('#mobile-menu').toggleClass('open');
+    });
+  });
+</script>
+
+
+    <script>
+        // Simple form validation and image preview functionality
+        document.getElementById('info-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Formulaire soumis avec succès!');
+        });
+        
+        // File input functionality
+        document.querySelector('.file-input button').addEventListener('click', function() {
+            // In a real implementation, this would trigger a file input dialog
+            alert('Fonctionnalité de sélection de fichier à implémenter');
+        });
+    </script>
+</body>
+</html>

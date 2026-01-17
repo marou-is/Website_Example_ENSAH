@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" href="C:\Users\DELL\Desktop\IDDL\iddl\S5\WEB\Support\images\logo-ensah.png" type="Ecole" id="ENSAH"/>
+        <link rel="stylesheet" href="./formation.css">
+    </head>
+    <body>
+      <header>
+        <div id="bloc_page">
+    
+          <div class="header-top">
+             <div class="logo-section">
+              <div class="title">
+               <img src="./Support/images/logo-ensah.png" alt="ENSAH Logo">
+               <div class = logo>
+                <h1>ENSAH</h1>
+               </div>
+               <p>Ecole Nationale des Sciences <br> Appliquées d'Al Hoceima</p>
+              </div>
+            </div>
+          </div>
+    
+            <div id="nav-icon3">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+    
+            <div id="mobile-menu">
+              <ul>
+                <li><a href="./tp3.html">ACCUEIL</a></li>
+                <li><a href="./presentation.html">PRÉSENTATION</a></li>
+                <li><a href="./formation.html">FORMATION</a></li>
+                <li><a href="./inscription.html">INSCRIPTION</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          
+            
+            <div class="novo">
+                <nav>
+               <ul>
+                <li><a href="./tp3.html">ACCUEIL</a></li>
+                <li><a href="./presentation.html">PRÉSENTATION</a></li>
+                <li><a href="./formation.html">FORMATION</a></li>
+                <li><a href="./inscription.html">INSCRIPTION</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+               </ul>
+              </nav>
+            </div>
+      
+    
+            
+            
+        
+        <div class="header-line">
+          <img src="./Support/images/separateur.png" alt="header line" width="100%" height="5px">
+        </div>
+       </div>
+      </header>
+        <br></br>
+        <div class="centrer">
+        <p> Bonjour c'est ma premiere mission en programmation web </p>
+        <div class="audvd">
+        <div class="vid">
+        <video src="./Support/Video/Video.mp4" height="25%" width="25%" controls ></video>
+        </div>
+        <div class="aud">
+        <audio src="./Support/Audio/Welcome.mp3"  controls ></audio>
+        </div>
+        </div>
+        </div>
+        <footer>
+          <div class="footer-content">
+            <div class="footer-separator">
+               <div class="footer-line">
+                <img src="./Support/images/separateur.png" alt="footer background" class="footer-bg" width="100%" height="5px">
+                <img src="./Support/images/ombre.png" alt="footer background" class="footer-bg" width="100%" height="10px">
+                <img src="./Support/images/ico_top.png" alt="footer dot" class="footer-dot" width="40px" height="10px">
+               </div>
+            </div>
+            <div class="footer-main">
+              <div class = "footer-info">
+              <h3>CONTACTEZ-NOUS</h3>
+              <p>Ecole Nationale des Sciences Appliquées Al Hoceima
+              <br>BP 03, Ajdir Al-Hoceima</p>
+              <p>Tel: ‪+212(0) 539 80 57 12‬</p>
+              </div>
+             <div class = "footer-pics">
+              <h3>GALERIES</h3>
+              <ul class="footer-galleries">
+                <li><a href="#img1"><img src="./Support/images/photo1.jpg"></a></li>
+                <li><a href="#img2"><img src="./Support/images/photo2.jpg"></a></li>
+                <li><a href="#img3"><img src="./Support/images/photo3.jpg"></a></li>
+                <div id="img1" class="lightbox">
+                <a href="#">
+                <img src="./Support/images/photo1L.jpg" alt="large version">
+                </a>
+                </div>
+                <div id="img2" class="lightbox">
+                <a href="#">
+                <img src="./Support/images/photo2L.jpg" alt="large version">
+                </a>
+                </div>
+                <div id="img3" class="lightbox">
+                <a href="#">
+                <img src="./Support/images/photo3L.jpg" alt="large version">
+                </a>
+                </div>
+              </ul>
+             </div>
+             <div class = "liens">
+              <h3>LIENS UTILES</h3>
+              <div class="footer-line-links">
+                <div class="ico-imgs">
+                <img src="./Support/images/ico_liensexterne.png" alt="links separator" width="50px" height="5px">
+                <img src="./Support/images/ico_liensexterne.png" alt="links separator" width="50px" height="5px">
+                <img src="./Support/images/ico_liensexterne.png" alt="links separator" width="50px" height="5px">
+                </div>
+                <div class="ico-links">
+                  <ul>
+                   <li>Enseignement superieur</li>
+                   <li>Site de l'Universite</li>
+                   <li>FST AL Hoceima</li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+          </div>
+          </div>
+      </footer>
+      
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script>
+        $(function () {
+          $('#nav-icon3').on('click', function () {
+            $(this).toggleClass('open');
+            $('#mobile-menu').toggleClass('open');
+          });
+        });
+      </script>
+        
+</body>
+</html>
